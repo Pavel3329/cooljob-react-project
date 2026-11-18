@@ -1,0 +1,44 @@
+.hero {
+  width: 100%;
+  min-height: 800px;
+  background-color: #cde7ff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 120px clamp(24px, 5.2vw, 100px) 80px;
+}
+
+.title {
+  max-width: 750px;
+  margin: 0;
+
+  color: rgba(0, 0, 0, 0.85);
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(36px, 4vw, 64px);
+  font-weight: 700;
+  line-height: 1.18;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 650px;
+  }
+
+  .container {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 550px;
+  }
+
+  .container {
+    padding-top: 60px;
+  }
+}

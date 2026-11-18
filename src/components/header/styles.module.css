@@ -1,9 +1,9 @@
 .header {
   width: 100%;
-  background-color: #ffffff;
 }
 
 .container {
+  width: 100%;
   max-width: 1920px;
   min-height: 104px;
   margin: 0 auto;
@@ -19,69 +19,70 @@
   font-size: 30px;
   font-weight: 700;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .navigation {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-left: 150px;
+  margin-left: clamp(40px, 5.7vw, 110px);
 }
 
 .navigation a,
 .actions a {
   color: rgba(0, 0, 0, 0.8);
-  font-family: "Raleway", sans-serif;
   font-size: 15px;
-  font-weight: 600;
   text-decoration: none;
+  white-space: nowrap;
+}
+
+.navigation a {
+  font-weight: 600;
 }
 
 .actions {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 30px;
   margin-left: auto;
 }
 
-.actions a:first-child {
-  font-weight: 400;
-}
-
 .actions .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 65px;
+  min-height: 44px;
+  background-color: #ffffff;
   color: #274059;
+  font-weight: 600;
 }
 
 @media (max-width: 900px) {
   .container {
     flex-wrap: wrap;
-    gap: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .navigation {
     margin-left: 0;
-    gap: 20px;
-  }
-
-  .actions {
-    gap: 20px;
+    order: 3;
+    width: 100%;
+    gap: 24px;
   }
 }
 
-@media (max-width: 600px) {
-  .container {
-    justify-content: space-between;
+@media (max-width: 480px) {
+  .actions {
+    gap: 12px;
   }
 
   .navigation {
-    order: 3;
-    width: 100%;
     flex-wrap: wrap;
-  }
-
-  .actions {
-    margin-left: 0;
+    gap: 12px 20px;
   }
 }
