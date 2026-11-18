@@ -58,6 +58,7 @@
   background-color: #ffffff;
   color: #274059;
   font-weight: 600;
+  border-radius: 8px;
 }
 
 @media (max-width: 900px) {

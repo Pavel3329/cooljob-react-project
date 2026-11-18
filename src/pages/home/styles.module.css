@@ -2,6 +2,11 @@
   width: 100%;
   min-height: 800px;
   background-color: #cde7ff;
+
+  background-image: url("../../assets/images/hero-shape.svg");
+  background-repeat: no-repeat;
+  background-size: auto 82%;
+  background-position: right 268px;
 }
 
 .container {
