@@ -1,0 +1,87 @@
+.header {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1920px;
+  min-height: 104px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 5.2vw, 100px);
+
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #274059;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 150px;
+}
+
+.navigation a,
+.actions a {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-left: auto;
+}
+
+.actions a:first-child {
+  font-weight: 400;
+}
+
+.actions .login {
+  color: #274059;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navigation {
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .actions {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .navigation {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .actions {
+    margin-left: 0;
+  }
+}
