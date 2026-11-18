@@ -1,5 +1,8 @@
 import Header from "../../components/header";
 import SearchBar from "../../components/searchBar";
+import CompanyLogos from "../../components/companyLogos";
+import CategoryCardList from "../../components/categoryCardList";
+
 import styles from "./styles.module.css";
 
 function Home() {
@@ -17,6 +20,9 @@ function Home() {
           <SearchBar />
         </div>
       </section>
+
+      <CompanyLogos />
+      <CategoryCardList />
     </main>
   );
 }
