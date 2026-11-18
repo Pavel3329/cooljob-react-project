@@ -3,6 +3,7 @@ import SearchBar from "../../components/searchBar";
 import CompanyLogos from "../../components/companyLogos";
 import CategoryCardList from "../../components/categoryCardList";
 import VacancyCardList from "../../components/vacancyCardList";
+import Footer from "../../components/footer";
 
 import styles from "./styles.module.css";
 
@@ -25,6 +26,7 @@ function Home() {
       <CompanyLogos />
       <CategoryCardList />
       <VacancyCardList />
+      <Footer />
     </main>
   );
 }
